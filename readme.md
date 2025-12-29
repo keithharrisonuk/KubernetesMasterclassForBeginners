@@ -1,31 +1,37 @@
 
+# Rancher
 
-# Create
+
+# MiniKube
+## Create
 minikube start --driver=podman --container-runtime=containerd
 
-# Start
+## Start
 podman machine start
 kubectl run redis --image=redis123
 
-# View
+## View
 kubectl get nodes
 kubectl describe pod myapp-pod
 
-# Stop
+## Stop
 minikube stop
 podman machine stop
 
 
-# Delete
+## Delete
 kubectl delete deployment hello-minikube
 kubectl delete service nginx
 
 
 
-# Cli Apps
+# Apps
+
+## Cli Apps
 minikube
 podman
 
 
-# Desktop Apps
+## Desktop Apps
 Podman Desktop
+Rancher Desktop
